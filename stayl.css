@@ -35,7 +35,7 @@ body{
 }
 /*btn*/
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../e4c1d9aa-f756-4086-a852-abfe1d2256db.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('e4c1d9aa-f756-4086-a852-abfe1d2256db.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -80,7 +80,7 @@ color:#E6B65C;
 
 /* start secion*/
 .secion{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../9392cead-7ec2-48c0-8938-b3fe22c91843-md.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('9392cead-7ec2-48c0-8938-b3fe22c91843-md.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -117,7 +117,7 @@ box-shadow: 10px 10px 20px rgba(231, 112, 15, 0.589);
 /* end secion*/
 /*start Why Egypt*/
 .viseg{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../backk.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('backk.jpeg');
         background-size: cover;
 }
 .fgf{
@@ -145,7 +145,7 @@ margin-top: 20px;
 /*End Why Egypt*/
 /* Start Top-Tours*/
 .Top-Tours{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../backgraaaa.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('backgraaaa.png');
         background-size: cover;
         
 }
@@ -206,7 +206,7 @@ border-bottom: 1px solid #d4af37;
 /*End choose*/
 /*Start Luxury Nile Cruises*/
 .Nile{
-background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../bottt.jpeg');
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bottt.jpeg');
     background-size: cover;
     height: 100vh;
 }
@@ -245,7 +245,7 @@ padding-top: 500px;
 /*Start Egypt*/
 .Ready{
     height: 650px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../bnbn.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('bnbn.jpeg');
         background-size: cover;
 }
 
@@ -256,7 +256,7 @@ padding-top: 500px;
 /*End Egypt*/
 /*Start footer*/
 .footer{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../fooot.jpeg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('fooot.jpeg');
         background-size: cover;
         
 }
@@ -299,4 +299,5 @@ text-decoration: none;
     padding-left: 12px;
     color: #af85239f;
 }
+
 /*End footer*/
