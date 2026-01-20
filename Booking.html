@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Book Your Trip</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #0b0f14;
+            color: #E8D9B5;
+        }
+
+        .booking-card {
+            background: #111;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 0 40px rgba(0, 0, 0, .5);
+        }
+
+        .form-control,
+        .form-select {
+            background: #0b0f14;
+            border: 1px solid #333;
+            color: #E8D9B5;
+        }
+
+        .form-control::placeholder {
+            color: #777;
+        }
+
+        .duration-btn {
+            border: 1px solid #D4AF37;
+            color: #D4AF37;
+            background: transparent;
+        }
+
+        .duration-btn.active {
+            background: #D4AF37;
+            color: #000;
+        }
+
+        .price-box {
+            font-size: 24px;
+            font-weight: bold;
+            color: #D4AF37;
+        }
+
+        .btn-gold {
+            background: #D4AF37;
+            color: #000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+
+                <div class="booking-card">
+                    <h2 class="text-center mb-4">Book Your Trip</h2>
+
+                    <!-- FORM -->
+                    <form id="bookingForm">
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Full Name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email Address" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone / WhatsApp" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <select class="form-select">
+                                <option selected>Select Tour</option>
+                                <option>Luxor Temples</option>
+                                <option>Aswan & Nile</option>
+                                <option>Red Sea Escape</option>
+                            </select>
+                        </div>
+
+                        <!-- DURATION -->
+                        <div class="mb-3">
+                            <label class="mb-2">Choose Duration</label>
+                            <div class="d-flex gap-2">
+                                <button type="button" class="btn duration-btn w-100" data-price="1299">7 Days</button>
+                                <button type="button" class="btn duration-btn w-100" data-price="2299">14 Days</button>
+                                <button type="button" class="btn duration-btn w-100" data-price="3999">30 Days</button>
+                            </div>
+                        </div>
+
+                        <!-- PRICE -->
+                        <div class="text-center my-3">
+                            Total Price:
+                            <div class="price-box">$1299</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="3" placeholder="Message (optional)"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-gold w-100 py-2">
+                            Send Booking
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const buttons = document.querySelectorAll(".duration-btn");
+        const priceBox = document.querySelector(".price-box");
+
+        buttons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                buttons.forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+                priceBox.textContent = `$${btn.dataset.price}`;
+            });
+        });
+
+        document.getElementById("bookingForm").addEventListener("submit", e => {
+            e.preventDefault();
+            alert("Booking sent successfully!");
+        });
+    </script>
+
+</body>
+
+</html>

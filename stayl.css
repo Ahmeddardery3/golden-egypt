@@ -1,0 +1,302 @@
+:root{
+    --color-sun: #f38f39;
+    --color-hee: #C9972B;
+    --color-sss:#E6B566;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body{
+    height: 1000px;
+}
+/*btn*/
+.btn {
+    padding: 10px 25px;
+    background-color: var(--color-sun);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: 0.3;
+    box-shadow: 7px 20px 10px rgba(24, 23, 23, 0.322);
+
+}
+
+.btn:hover {
+    background-color: #D9A441;
+    color: rgba(100, 51, 4, 0.849);
+    box-shadow: 10px 10px 20px rgba(231, 112, 15, 0.589);
+    transform: translateY(-3px);
+}
+/*btn*/
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../e4c1d9aa-f756-4086-a852-abfe1d2256db.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+}
+.logo{
+max-width: 125px;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--color-sun);
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    font-size: 19px;
+    color: var(--color-sun);
+    border-bottom: 1px solid var(--color-sun);
+    border-radius: 12px;
+    padding-bottom: 2px;
+}
+header h1{
+    color: var(--color-sun);
+    text-align: center;
+}
+header h4{
+color:#E6B65C;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.tehed{
+    padding-top:140px;
+    justify-items: center;
+}
+/* End Navbar */
+
+/* start secion*/
+.secion{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../9392cead-7ec2-48c0-8938-b3fe22c91843-md.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: white;
+}
+.secion h1{
+    color: var(--color-sss);
+}
+.secion .card {
+    transition: 0.3;
+    border-radius:25px;
+    background-color: rgba(0, 0, 0, 0.3);
+        backdrop-filter: blur(1px);
+        -webkit-backdrop-filter: blur(1px);
+    box-shadow: 7px 20px 10px rgba(24, 23, 23, 0.322);
+}
+.secion .card:hover{
+box-shadow: 10px 10px 20px rgba(231, 112, 15, 0.589);
+    transform: translateY(-3px);
+    cursor:pointer;
+}
+.secion h5{
+    color: rgba(224, 116, 44, 0.705);
+}
+
+.secion p{
+    color: rgba(255, 102, 0, 0.705);
+}
+
+.secion h2{
+    color:var(--color-sss);
+}
+/* end secion*/
+/*start Why Egypt*/
+.viseg{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../backk.jpeg');
+        background-size: cover;
+}
+.fgf{
+    color: var(--color-sss);
+}
+.viseg h2{
+    color: var(--color-sun);
+}
+.viseg p{
+    color: rgba(221, 159, 45, 0.911);
+}
+.box{
+height: 300px;
+border: 1px solid rgba(117, 54, 17, 0.329);
+background: linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5));
+margin-top: 20px;
+
+}
+.icon {
+    color:var(--color-sss);
+    width: 50px;
+    height: 50px;
+}
+/*End Why Egypt*/
+/* Start Top-Tours*/
+.Top-Tours{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../backgraaaa.png');
+        background-size: cover;
+        
+}
+.Top-Tours .card{
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+    box-shadow: 7px 20px 10px rgba(24, 23, 23, 0.322);
+    transition: 0.3;
+}
+
+.Top-Tours .card:hover{
+transform: translateY(-3px);
+box-shadow: 10px 10px 20px rgba(231, 112, 15, 0.589);
+
+}
+
+.Top-Tours h1{
+    color: var(--color-sss);
+}
+
+.Top-Tours h2{
+    color: var(--color-sss);
+}
+
+.Top-Tours h3{
+    color: var(--color-sun);
+}
+
+.Top-Tours p{
+    color: var(--color-sss);
+}
+
+.Top-Tours span{
+    color:#d4af37;
+}
+/*End Top-Tours*/
+/*Start choose*/
+
+.lolo{
+background-color:rgba(192, 179, 162, 0.603);
+}
+.lolo span{
+border-bottom: 1px solid #d4af37;
+}
+
+.lolo .start{
+    border-radius: 20px;
+    height: 250px;
+    background-color: rgba(245, 223, 197, 0.877);
+    box-shadow: 7px 20px 10px rgba(24, 23, 23, 0.322);
+}
+
+.lolo .start svg{
+    font-size: 55px;
+    color: #d4af37;
+}
+/*End choose*/
+/*Start Luxury Nile Cruises*/
+.Nile{
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../bottt.jpeg');
+    background-size: cover;
+    height: 100vh;
+}
+.Nile h1{
+    color: #f1c945bb;
+}
+
+.Nile h5{
+    color: #dba661de;
+}
+.bot{
+padding-top: 500px;
+}
+/*End Luxury Nile Cruises*/
+/*Start Testimonials*/
+.Testimonials{
+    background-color:rgba(192, 179, 162, 0.603) ;
+}
+.Testimonials svg{
+    color: #d4af37;
+        font-size: 18px;
+        margin-right: 3px;
+}
+.Testimonials .blcaak{
+    border-radius: 20px;
+        height: 200px;
+        background-color: rgba(245, 223, 197, 0.877);
+        box-shadow: 7px 20px 10px rgba(24, 23, 23, 0.322);
+}
+/*End Testimonials*/
+.vvvb{
+    background-color: rgba(156, 148, 136, 0.603);
+    height: 30px;
+    
+}
+/*Start Egypt*/
+.Ready{
+    height: 650px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../bnbn.jpeg');
+        background-size: cover;
+}
+
+.Ready .Egypt{
+    margin: 80px;
+    float: right;
+}
+/*End Egypt*/
+/*Start footer*/
+.footer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../fooot.jpeg');
+        background-size: cover;
+        
+}
+.footer .foolo svg{
+    width: 70px;
+    height: 70px;
+}
+
+.footer .foolo h1{
+    padding-left: 30px;
+}
+
+.footer .foolo h1 span{
+    padding-left: 130px;
+}
+
+.footer{
+    color: #af85239f;
+}
+.footer .ahmed a {
+text-decoration: none;
+display: block;
+padding-left: 12px;
+color: #af85239f;
+
+}
+.footer .ahmed .olaa{
+    border-left : 1px solid #af85239f;
+}
+.footer .ahmed .sasas{
+border-left: 1px solid #af85239f;
+border-right: 1px solid #af85239f;
+}
+.footer .sama {
+    display: block;
+    
+}
+.footer .sama a{
+text-decoration: none;
+    padding-left: 12px;
+    color: #af85239f;
+}
+/*End footer*/
