@@ -1,3 +1,65 @@
+html {
+    scroll-behavior: auto !important;
+}
+#loader {
+    position: fixed;
+    inset: 0;
+    background: #000;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loader-content {
+    text-align: center;
+}
+
+.loader-logo {
+    width: 120px;
+    animation: pulse 1s ease-in-out infinite;
+}
+
+.loader-bar {
+    width: 200px;
+    height: 3px;
+    background: #ffffff20;
+    border-radius: 10px;
+    margin: 20px auto 0;
+    overflow: hidden;
+}
+
+.loader-fill {
+    height: 100%;
+    width: 0%;
+    background: #D4AF37;
+    border-radius: 10px;
+    animation: fill 1.5s ease forwards;
+}
+
+@keyframes pulse {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.7;
+        transform: scale(0.95);
+    }
+}
+
+@keyframes fill {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
 :root{
     --color-sun: #f38f39;
     --color-hee: #C9972B;
